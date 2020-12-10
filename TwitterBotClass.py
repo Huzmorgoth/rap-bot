@@ -68,9 +68,9 @@ class TwitterBotClass:
         return text_token
 
     def collect_text(self, seed):
-        #wiki_text = self.preprocess_text(self.get_wiki_text(seed), seed)
+        wiki_text = self.preprocess_text(self.get_wiki_text(seed), seed)
         wh_text = self.preprocess_text(self.get_wikihow_text(seed), seed)
-        consol_text = wh_text #+ wiki_text
+        consol_text = wh_text + wiki_text
         text_token = consol_text #self.preprocess_text(consol_text, seed)
 
         return text_token
