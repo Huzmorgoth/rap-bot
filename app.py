@@ -7,7 +7,7 @@ no_first_term = ['and', 'or', 'but', 'of', 'are', 'is', '.', ',']
 bot_class = TwitterBotClass()
 st.header('Rap Bot:')
 user_input = st.text_input('Suggest a word for the bot to rap on:')
-im, respo = bot_class.execute_code(user_input, img, font_loc, no_first_term)
+im, respo = bot_class.execute_code(user_input.lower(), img, font_loc, no_first_term)
 generate_sum = st.button('Generate Rap')
 if generate_sum:
     rap = respo
