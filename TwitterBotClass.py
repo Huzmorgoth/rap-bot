@@ -103,7 +103,7 @@ class TwitterBotClass:
                         char_bool = True
                 if char_bool:
                     break
-        if len(result) < 4 and len(result) > 1:
+        if len(result) < 4 and len(result) > 0:
             if rhymes[0] not in result[0]:
                 result.append(
                     '\n (I could not rap on '+rhymes[0].capitalize()+' but\nI spat some lines on its rhymes!)')
